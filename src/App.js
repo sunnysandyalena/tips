@@ -5,7 +5,7 @@ import tipsImg from './tips.png';
 function App() {
   const [activity, setActivity] = useState("");
   const fetchActivity = async () => {
-    const response = await fetch("http://www.boredapi.com/api/activity/");
+    const response = await fetch("https://www.boredapi.com/api/activity/");
     const data = await response.json();
     setActivity(data.activity);
   };
